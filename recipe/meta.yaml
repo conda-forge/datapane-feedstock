@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.6.11" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d632ec08906d4c8e8b1dca22f091c9753e52a41a79f20e46e8dccae2e49fbd52
+  sha256: 698857170749fa0a4912d5f660afd5bfab64642768720b90b082acd24b24aabb
   
 build:
   noarch: python
@@ -51,7 +51,10 @@ requirements:
     - stringcase >=1.2.0,<2.0.0
     - tabulate >=0.8.7,<0.9.0
     - toolz >=0.10.0,<0.11.0
-    - validators >=0.15.0,<0.16.0
+    - validators >=0.16.0,<0.17.0
+    - lxml >=4.5.0,<5.0.0
+    - requests-toolbelt >=0.9.0,<1.0.0
+    - furl >=2.0.0,<3.0.0
 
 test:
   imports:
