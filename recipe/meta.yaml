@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 698857170749fa0a4912d5f660afd5bfab64642768720b90b082acd24b24aabb
+  sha256: 8322e69e4938d0957efd462c29cd04d27dc43f9a1625daa126f3d70718b8780d
   
 build:
   noarch: python
