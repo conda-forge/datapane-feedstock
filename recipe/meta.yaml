@@ -65,7 +65,7 @@ test:
     - datapane.common
     - datapane.resources
     - datapane.resources.local_report
-    - datapane.resources.scaffold
+    - datapane.resources.templates
     - datapane.runner
   commands:
     - datapane --help
