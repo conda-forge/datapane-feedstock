@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.8.5" %}
+{% set version = "0.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2ed2a8db49423f7d63dea7141c74376ab048b292d1c1bf61e2af6c14bfae16f4
+  sha256: fdae7a2cf49849550b03d1cc15e7876bd6e5c5ba87060eed4bfa16b009e02cac
   
 build:
   noarch: python
@@ -26,34 +26,43 @@ requirements:
   run:
     - python >=3.6.1,<4.0.0
     - dataclasses >=0.7.0,<0.8.0
+
+    # DS
+    - numpy >=1.18.0,<2.0.0
+    - pandas >=1.0.1,<2.0.0
+    - pyarrow >=2.0.0,<3.0.0
+
+    # viz
+    - matplotlib-base >=3.1.0,<4.0.0
     - altair >=4.0.0,<5.0.0
-    - bokeh >=2.0.0,<3.0.0
+    # - bokeh >=2.0.0,<3.0.0
+    - bokeh >=2.0.0,<2.0.1
+    - nbconvert >=6.0.0,<6.1.0
+    - plotly >=4.8.1,<5.0.0
+    - folium >=0.11.0,<0.12.0
+
+    # misc
+    - dacite >=1.5.0,<2.0.0
+    - colorlog >=4.1.0,<5.0.0
+    - munch >=2.5.0,<3.0.0
+    - stringcase >=1.2.0,<2.0.0
+    - pyyaml >=5.3.0,<6.0.0
+    - packaging >=20.3,<21.0
+    
+    # cli
     - click >=7.0.0,<8.0.0
     - click-spinner >=0.1.8,<0.2.0
-    - colorlog >=4.1.0,<5.0.0
-    - dacite >=1.5.0,<2.0.0
-    - flit-core >=2.3.0,<2.4.0
-    - folium >=0.11.0,<0.12.0
-    - importlib_resources >=3.0.0,<4.0.0
+    - ruamel.yaml >=0.16.5,<0.17.0
+    - requests >=2.20.0,<3.0.0
+    - validators >=0.18.0,<0.19.0
     - jinja2 >=2.11.1,<3.0.0
     - jsonschema >=3.2.0,<4.0.0
-    - matplotlib-base >=3.1.0,<4.0.0
-    - munch >=2.5.0,<3.0.0
-    - nbconvert >=6.0.0,<6.1.0
-    - numpy >=1.18.0,<2.0.0
-    - packaging >=20.3,<21.0
-    - pandas >=1.0.1,<2.0.0
-    - plotly >=4.8.1,<5.0.0
-    - pyarrow >=0.17.0,<0.18.0
-    - pyyaml >=5.3.0,<6.0.0
-    - requests >=2.20.0,<3.0.0
-    - ruamel.yaml >=0.16.5,<0.17.0
-    - stringcase >=1.2.0,<2.0.0
     - tabulate >=0.8.7,<0.9.0
-    - toolz >=0.10.0,<0.11.0
-    - validators >=0.18.0,<0.19.0
-    - lxml >=4.5.0,<5.0.0
-    - requests-toolbelt >=0.9.0,<0.10.0
+    - toolz >=0.11.0,<0.12.0
+    - flit-core >=3.0.0,<3.1.0
+    - importlib_resources >=3.0.0,<4.0.0
+    - lxml >=4.5.2,<5.0.0
+    - requests-toolbelt >=0.9.1,<0.10.0
     - furl >=2.1.0,<3.0.0
 
 test:
