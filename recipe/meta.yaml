@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: fdae7a2cf49849550b03d1cc15e7876bd6e5c5ba87060eed4bfa16b009e02cac
+  sha256: e24809021ae3f19d8630d20c83821e06706b8c2668fe54c7487e0523539eb2ce
   
 build:
   noarch: python
@@ -64,6 +64,10 @@ requirements:
     - lxml >=4.5.2,<5.0.0
     - requests-toolbelt >=0.9.1,<0.10.0
     - furl >=2.1.0,<3.0.0
+    - bleach >=3.2.1,<4.0.0
+    - glom >=20.11.0,<21.0.0
+    - boltons >=20.2.1,<21.0.0
+    - dominate >=2.4.0,<3.0.0
 
 test:
   imports:
@@ -82,8 +86,8 @@ test:
     - dp-runner --help
   requires:
     - pip
-  commands:
-    - pip check
+#  commands:
+#    - pip check
 
 about:
   home: https://datapane.com
