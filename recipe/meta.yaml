@@ -86,8 +86,8 @@ test:
     - dp-runner --help
   requires:
     - pip
-  commands:
-    - pip check
+#  commands:
+#    - pip check
 
 about:
   home: https://datapane.com
