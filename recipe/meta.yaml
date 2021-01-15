@@ -1,21 +1,21 @@
 {% set name = "datapane" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: e24809021ae3f19d8630d20c83821e06706b8c2668fe54c7487e0523539eb2ce
-  
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a395095c4dd24e2b68510179ab47ba8a33f78f2c82bcad7c3b42f83624bed136
+
 build:
   noarch: python
   number: 0
   entry_points:
     - datapane = datapane.client.__main__:main
     - dp-runner = datapane.runner.__main__:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -48,7 +48,7 @@ requirements:
     - stringcase >=1.2.0,<2.0.0
     - pyyaml >=5.3.0,<6.0.0
     - packaging >=20.3,<21.0
-    
+
     # cli
     - click >=7.0.0,<8.0.0
     - click-spinner >=0.1.8,<0.2.0
@@ -94,7 +94,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Datapane client library and CLI tool"
+  summary: Datapane client library and CLI tool
   description: |
     Create and publish interactive reports in Python. 
     Datapane is an open source framework which makes 
