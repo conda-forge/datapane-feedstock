@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a34124f0499abbdd5b7a9bd1cc442aa4041ee48be587bc57c8d13a3fbac55273
+  sha256: 03fc55a9524a53f420d6db614396a17ada2847931abed8d9c427b21d885ecf9d
 
 build:
   noarch: python
@@ -27,13 +27,11 @@ requirements:
     - python >=3.7.0,<4.0.0
 
     # DS
-    - numpy >=1.16.5,<2.0.0
     - pandas >=1.0.1,<2.0.0
     - pyarrow >=3.0.0,<4.0.0
 
     # viz
     - altair >=4.0.0,<5.0.0
-    - nbconvert >=6.0.0,<6.1.0
 
     # misc
     - dacite >=1.5.0,<2.0.0
@@ -52,7 +50,6 @@ requirements:
     - jsonschema >=3.0.0,<4.0.0
     - tabulate >=0.8.0,<0.9.0
     - toolz >=0.11.0,<0.12.0
-    - flit-core >=3.0.0,<3.1.0
     - importlib_resources >=3.0.0,<6.0.0
     - lxml >=4.0.0,<5.0.0
     - requests-toolbelt >=0.9.1,<0.10.0
@@ -63,12 +60,16 @@ requirements:
     - dominate >=2.4.0,<3.0.0
     - micawber >=0.5.0,<0.6.0
   run_constrained:
+    # extra viz
     - matplotlib-base >=3.0.0,<4.0.0
     # - bokeh >=2.0.0,<3.0.0
     - bokeh >=2.2.0,<2.3.0
     - plotly >=4.0.0,<5.0.0
     - folium >=0.12.0,<0.13.0
-  
+    # cloud - TODO - make into metapackage
+    - nbconvert >=6.0.0,<6.1.0
+    - flit-core >=3.0.0,<3.1.0  
+
 test:
   imports:
     - datapane
