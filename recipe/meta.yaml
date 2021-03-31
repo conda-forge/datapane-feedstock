@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.10.4" %}
+{% set version = "0.10.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 03fc55a9524a53f420d6db614396a17ada2847931abed8d9c427b21d885ecf9d
+  sha256: 9964f653adedc503874412355416b6a6d1bb21617a848111cf22c744db33315d
 
 build:
   noarch: python
@@ -68,7 +68,7 @@ requirements:
     - folium >=0.12.0,<0.13.0
     # cloud - TODO - make into metapackage
     - nbconvert >=6.0.0,<6.1.0
-    - flit-core >=3.0.0,<3.1.0  
+    - flit-core >=3.0.0,<3.1.0
 
 test:
   imports:
