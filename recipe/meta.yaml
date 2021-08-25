@@ -60,7 +60,7 @@ requirements:
     - posthog >=1.4.0,<2.0.0
     - pydantic >=1.6.0,<2.0.0
     - chardet >=3.0.4,<5.0.0
-    - vega-datasets >=0.9.0,<1.0.0
+    - vega_datasets >=0.9.0,<1.0.0
 
   run_constrained:
     # extra viz
