@@ -32,35 +32,35 @@ requirements:
 
     # viz
     - altair >=4.0.0,<5.0.0
+    - vega_datasets >=0.9.0,<1.0.0
 
     # misc
-    - nbconvert >=5.6.1,<7.0.0
-    - jsonschema >=3.0.0,<4.0.0
-    - stringcase >=1.2.0,<2.0.0
-    - dacite >=1.5.0,<2.0.0
-    - colorlog >=4.1.0,<7.0.0
-    - munch >=2.3.0,<3.0.0
-    - pyyaml >=5.1.0,<6.0.0
-    - packaging >=20.0.0,<22.0.0
+    - boltons >=20.0.0,<22.0.0
+    - chardet >=3.0.4,<5.0.0
     - click >=7.1.0,<9.0.0
     - click-spinner >=0.1.8,<0.2.0
-    - requests >=2.19.0,<3.0.0
-    - validators >=0.18.0,<0.19.0
-    - jinja2 >=2.11.0,<4.0.0
-    - tabulate >=0.8.0,<0.9.0
-    - toolz >=0.11.0,<0.12.0
-    - importlib_resources >=3.0.0,<6.0.0
-    - lxml >=4.0.0,<5.0.0
-    - requests-toolbelt >=0.9.1,<0.10.0
+    - colorlog >=4.1.0,<7.0.0
+    - dacite >=1.5.0,<2.0.0
+    - dominate >=2.4.0,<3.0.0
     - furl >=2.0.0,<3.0.0
     - glom >=20.5.0,<21.0.0
-    - boltons >=20.0.0,<22.0.0
-    - dominate >=2.4.0,<3.0.0
+    - importlib_resources >=3.0.0,<6.0.0
+    - jinja2 >=2.11.0,<4.0.0
+    - jsonschema >=3.0.0,<4.0.0
+    - lxml >=4.0.0,<5.0.0
     - micawber >=0.5.0,<0.6.0
+    - munch >=2.3.0,<3.0.0
+    - nbconvert >=5.6.1,<7.0.0
+    - packaging >=20.0.0,<22.0.0
     - posthog >=1.4.0,<2.0.0
     - pydantic >=1.6.0,<2.0.0
-    - chardet >=3.0.4,<5.0.0
-    - vega_datasets >=0.9.0,<1.0.0
+    - pyyaml >=5.1.0,<6.0.0
+    - requests >=2.19.0,<3.0.0
+    - requests-toolbelt >=0.9.1,<0.10.0
+    - stringcase >=1.2.0,<2.0.0
+    - tabulate >=0.8.0,<0.9.0
+    - toolz >=0.11.0,<0.12.0
+    - validators >=0.18.0,<0.19.0
 
   run_constrained:
     # extra viz
