@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.12.2" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -41,6 +41,8 @@ requirements:
     - click-spinner >=0.1.8,<0.2.0
     - colorlog >=4.1.0,<7.0.0
     - dacite >=1.5.0,<2.0.0
+    - datacommons >=1.4.3,<2.0.0
+    - datacommons-pandas = >=0.0.3,<0.1.0
     - dominate >=2.4.0,<3.0.0
     - furl >=2.0.0,<3.0.0
     - glom >=20.5.0,<21.0.0
