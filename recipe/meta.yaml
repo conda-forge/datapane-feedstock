@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.12.3" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 812dcfb6865c92624a14ff9901d23cfcf5c0de63697c09628ba1a3144aab0045
+  sha256: 5942ebab49f51b381796c04cd11c3e479aa3bfd11bec64cb4e2a53e284e6605c
 
 build:
   noarch: python
@@ -49,7 +49,7 @@ requirements:
     - glom >=20.5.0,<21.0.0
     - importlib_resources >=3.0.0,<6.0.0
     - jinja2 >=2.11.0,<4.0.0
-    - jsonschema >=3.0.0,<4.0.0
+    - jsonschema >=4.2.1,<5.0.0
     - lxml >=4.0.0,<5.0.0
     - micawber >=0.5.0,<0.6.0
     - munch >=2.3.0,<3.0.0
@@ -57,7 +57,7 @@ requirements:
     - packaging >=20.0.0,<22.0.0
     - posthog >=1.4.0,<2.0.0
     - pydantic >=1.6.0,<2.0.0
-    - pyyaml >=5.1.0,<6.0.0
+    - pyyaml >=6.0.0,<7.0.0
     - requests >=2.19.0,<3.0.0
     - requests-toolbelt >=0.9.1,<0.10.0
     - stringcase >=1.2.0,<2.0.0
@@ -80,7 +80,7 @@ test:
     - datapane
     - datapane.client
     - datapane.client.api
-    - datapane.client.scripts
+    - datapane.client.apps
     - datapane.common
     - datapane.resources
     - datapane.resources.local_report
