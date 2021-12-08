@@ -80,7 +80,7 @@ test:
     - datapane
     - datapane.client
     - datapane.client.api
-    - datapane.client.scripts
+    - datapane.client.apps
     - datapane.common
     - datapane.resources
     - datapane.resources.local_report
