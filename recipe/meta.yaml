@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5942ebab49f51b381796c04cd11c3e479aa3bfd11bec64cb4e2a53e284e6605c
+  sha256: 43096606d5eda2a16d3618e48ab7f90dd0656894fc47e5b2208f65f612067b93
 
 build:
   noarch: python
@@ -49,7 +49,7 @@ requirements:
     - glom >=20.5.0,<21.0.0
     - importlib_resources >=3.0.0,<6.0.0
     - jinja2 >=2.11.0,<4.0.0
-    - jsonschema >=4.2.1,<5.0.0
+    - jsonschema >=3.2.0,<5.0.0
     - lxml >=4.0.0,<5.0.0
     - micawber >=0.5.0,<0.6.0
     - munch >=2.3.0,<3.0.0
