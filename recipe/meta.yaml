@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.15.3" %}
+{% set version = "0.15.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aaf69bf0c660f8cdf2021bba97a0248d5cc0e0ad1836e6ac29655246479df693
+  sha256: 9c37a5201cb4b50e3a70ad9dc0a1df08aa2b08d2054b463c3a96bde4bd3d619e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - datapane = datapane.client.__main__:main
     - dp-runner = datapane.runner.__main__:main
