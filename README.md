@@ -153,4 +153,5 @@ Feedstock Maintainers
 =====================
 
 * [@mands](https://github.com/mands/)
+* [@shahinrostami](https://github.com/shahinrostami/)
 
