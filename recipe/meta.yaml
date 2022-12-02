@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.15.4" %}
+{% set version = "0.15.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c37a5201cb4b50e3a70ad9dc0a1df08aa2b08d2054b463c3a96bde4bd3d619e
+  sha256: da5e1964aac4a3d4fb88ac3e8a101ebdb986801d281bf6f6aa47b9425f4d0710
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
 
     # DS
     - pandas >=1.1.0,<2.0.0
-    - pyarrow >=3.0.0,<7.0.0
+    - pyarrow >=6.0.0,<11.0.0
 
     # viz
     - altair >=4.0.0,<5.0.0
@@ -65,6 +65,7 @@ requirements:
     - tabulate >=0.8.0,<0.9.0
     - toolz >=0.11.0,<0.13.0
     - validators >=0.18.0,<0.21.0
+    - ipynbname >=2021.3.2,<2022.0.0
 
   run_constrained:
     # extra viz
