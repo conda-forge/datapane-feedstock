@@ -1,11 +1,11 @@
-About datapane
-==============
+About datapane-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datapane-feedstock/blob/main/LICENSE.txt)
 
 Home: https://datapane.com
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datapane-feedstock/blob/main/LICENSE.txt)
 
 Summary: Datapane client library and CLI tool
 
