@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.15.7" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b926d2c5be1ea6da8912a2afaa6942cfc0b3e4700e970afca84c26fb938e591
+  sha256: 2d8f4e5d91450ec26fbe6ce312e0e95532641a2182f65032645f79d31d0b3eb1
 
 build:
   noarch: python
   number: 0
   entry_points:
     - datapane = datapane.client.__main__:main
-    - dp-runner = datapane.runner.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -84,17 +83,12 @@ test:
   imports:
     - datapane
     - datapane.client
-    - datapane.client.api
-    - datapane.client.apps
     - datapane.common
+    - datapane.apps
     - datapane.resources
-    - datapane.resources.local_report
-    - datapane.resources.templates
-    - datapane.runner
   commands:
     - datapane --help
     - datapane --version
-    - dp-runner --help
   requires:
     - pip
 #  commands:
@@ -107,9 +101,9 @@ about:
   license_file: LICENSE
   summary: Datapane client library and CLI tool
   description: |
-    Create and publish interactive reports in Python. 
+    Create and publish interactive reports and apps in Python. 
     Datapane is an open source framework which makes 
-    it easy to turn scripts and notebooks into interactive reports. 
+    it easy to turn scripts and notebooks into interactive reports and apps. 
   doc_url: https://docs.datapane.com/
   dev_url: https://github.com/datapane/datapane
 
