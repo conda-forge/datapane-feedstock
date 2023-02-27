@@ -80,7 +80,7 @@ requirements:
     - flit-core >=3.1.0,<4.0.0
 
 test:
-  imports:c
+  imports:
     - datapane
     - datapane.client
     - datapane.common
