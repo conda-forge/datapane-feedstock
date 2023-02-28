@@ -81,7 +81,8 @@ test:
     - datapane
     - datapane.client
     - datapane.common
-    - datapane.apps
+    - datapane.app
+    - datapane.view
     - datapane.resources
   commands:
     - datapane --help
