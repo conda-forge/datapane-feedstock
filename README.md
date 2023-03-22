@@ -1,11 +1,11 @@
-About datapane
-==============
+About datapane-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datapane-feedstock/blob/main/LICENSE.txt)
 
 Home: https://datapane.com
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datapane-feedstock/blob/main/LICENSE.txt)
 
 Summary: Datapane client library and CLI tool
 
@@ -13,9 +13,9 @@ Development: https://github.com/datapane/datapane
 
 Documentation: https://docs.datapane.com/
 
-Create and publish interactive reports in Python.
+Create and publish interactive reports and apps in Python.
 Datapane is an open source framework which makes
-it easy to turn scripts and notebooks into interactive reports.
+it easy to turn scripts and notebooks into interactive reports and apps.
 
 
 Current build status
