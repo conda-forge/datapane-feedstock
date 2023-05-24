@@ -1,5 +1,5 @@
 {% set name = "datapane" %}
-{% set version = "0.16.4" %}
+{% set version = "0.16.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 231116132436a9dcb8cac57b69471c8fa612d296b6903f5dc70258de4c6ff4f6
+  sha256: 646e4481e0e31bfcebac2b80a1a06b333576293d9a3afdfbe0198b077959908b
 
 build:
   noarch: python
@@ -57,7 +57,7 @@ requirements:
     - pydantic >=1.6.0,<2.0.0
     - pyyaml >=5.4.0,<7.0.0
     - requests >=2.19.0,<3.0.0
-    - requests-toolbelt >=0.9.1,<0.11.0
+    - requests-toolbelt >=0.9.1,<1.1.0
     - tabulate >=0.8.9,<0.10.0
     - toolz >=0.11.0,<0.13.0
     - ipynbname >=2021.3.2,<2023.0.0
